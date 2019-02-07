@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Regina's Recreational Rentables</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navigation (not logged in) -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto"> 
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#howitworks">How It Works</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Log In</a>
+			</li>
+			<li class="nav-item">
+				<a class="btn btn-info" href="#" role="button">Create a listing</a>
+			</li>
+		</ul>			
+	</div>
+</div>
+</nav>
+
+<!--Search Bar-->
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-2 side"><h6> Filter results by </h6> </div>
+		<div class="col-sm-10 searchbar">
+			<div class="box">
+  				<div class="container-1">
+      			<span class="icon"><i class="fa fa-search"></i></span>
+     			<input type="search" id="search" placeholder="Looking for something else?" />
+  			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<!--Table with filter and search -->
+<div class="container-fluid">
+<div class="row">
+	<div class ="col-sm-2 filterside">    
+		<table class = "table filtertable">
+			<thead>
+				<tr>
+					<th scope = "col"> Location </th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr>
+					<td scope= "row">
+						<div class="form-check">
+  							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+ 							<label class="form-check-label" for="defaultCheck1"> North End  </label>
+						</div>
+						<div class="form-check">
+ 							<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+  							<label class="form-check-label" for="defaultCheck2"> South End </label>
+						</div>
+						<div class="form-check">
+ 							<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+  							<label class="form-check-label" for="defaultCheck2"> East End  </label>
+						</div>
+						<div class="form-check">
+ 							<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+  							<label class="form-check-label" for="defaultCheck2"> North End  </label>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<th scope = "row">
+						<div class="form-check">
+  						<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  						<label class="form-check-label" for="defaultCheck1">
+    					Available Today
+  						</label>
+						</div>
+					</th>
+				</tr>
+
+				<tr>
+					<th scope = "row"> 
+						<label for="customRange3"> Daily Rate </label>
+					<input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
+					</th>		
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class ="col-sm-10"> 
+
+    <hgroup class="mb20">
+		<h2 class="lead"><strong class="text-secondary"> 4 </strong> results were found for the search for <strong class="text-secondary">Bike</strong></h2>
+	</hgroup>
+
+    <section class="col-xs-12 col-sm-6 col-md-12">
+		<article class="search-result row">
+			<div class="col-xs-12 col-sm-12 col-md-3">
+				<a href="#" title="Lorem ipsum" class="thumbnail"><img src="http://lorempixel.com/250/140/people" alt="Lorem ipsum" /></a>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-2">
+				<ul class="meta-search">
+					<li><i class="fa fa-user"></i> Username</li>
+					<li><i class="far fa-money-bill-alt"></i> Price</li>
+					<li><i class="far fa-check-square"></i> Available now</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-7 excerpet">
+				<h3><a title="">Voluptatem, exercitationem, suscipit, distinctio</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>					
+			</div>
+		</article>
+
+        <article class="search-result row">
+			<div class="col-xs-12 col-sm-12 col-md-3">
+				<a href="#" title="Lorem ipsum" class="thumbnail"><img src="http://lorempixel.com/250/140/food" alt="Lorem ipsum" /></a>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-2">
+				<ul class="meta-search">
+					<li><i class="fa fa-user"></i> Username</li>
+					<li><i class="far fa-money-bill-alt"></i> Price</li>
+					<li><i class="far fa-check-square"></i> Available now</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-7">
+				<h3><a href="#" title="">Voluptatem, exercitationem, suscipit, distinctio</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>						
+			</div>
+		</article>
+
+		<article class="search-result row">
+			<div class="col-xs-12 col-sm-12 col-md-3">
+				<a href="#" title="Lorem ipsum" class="thumbnail"><img src="http://lorempixel.com/250/140/sports" alt="Lorem ipsum" /></a>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-2">
+				<ul class="meta-search">
+					<li><i class="fa fa-user"></i> Username</li>
+					<li><i class="far fa-money-bill-alt"></i> Price</li>
+					<li><i class="far fa-check-square"></i> Available now</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-7">
+				<h3><a href="#" title="">Voluptatem, exercitationem, suscipit, distinctio</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>
+			</div>
+		</article>		
+
+		<article class="search-result row">
+			<div class="col-xs-12 col-sm-12 col-md-3">
+				<a href="#" title="Lorem ipsum" class="thumbnail"><img src="http://lorempixel.com/250/140/sports" alt="Lorem ipsum" /></a>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-2">
+				<ul class="meta-search">
+					<li><i class="fa fa-user"></i> Username</li>
+					<li><i class="far fa-money-bill-alt"></i> Price</li>
+					<li><i class="far fa-check-square"></i> Available now</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-7">
+				<h3><a href="#" title="">Voluptatem, exercitationem, suscipit, distinctio</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>
+			</div>
+		</article>		
+
+	</section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+</div>
+</div>
+
+
+<!--- Footer -->
+<footer>
+<div class="container-fluid">
+<div class="row text-center">
+	<div class="col-md-4">
+		<hr class="light">
+		<img src="img/smalllogo2.png">
+		<hr class="light">
+		<p>306-123-1234</p>
+		<p>fakeemail@email.com</p>
+		<p>100 Regina Street</p>
+		<p>Regina, Saskatchewan</p>
+	</div>
+	<div class="col-md-4 social">
+		<hr class="light">
+		<h6> Connect </h6>
+		<hr class="light">
+		<p><i class="fab fa-facebook"></i><a href="#"> Facebook </a></p>
+		<p><i class="fab fa-twitter"></i><a href="#"> Twitter</a></p>
+		<p><i class="fab fa-google-plus-g"></i><a href="#"> Google Plus </a></p>
+		<p><i class="fab fa-instagram"></i><a href="#"> Instagram </a></p>
+     </div>
+
+     <div class="col-md-4 about">
+		<hr class="light">
+		<h6> About </h6>
+		<hr class="light">
+		<p><a href="#">Meet the team </a><p>
+		<p><a href="#">Help </a><p>
+		<p><a href="#">Terms & Agreements </a><p>
+     </div>
+
+	<div class="col-12">
+		<hr class="light-100">
+		<h6>&copy; ReginasRecreationalRentables.com</h6>
+	</div>
+
+</div>
+</div>
+</footer>
+</body>
+</html>
